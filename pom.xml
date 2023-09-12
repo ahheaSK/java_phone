@@ -14,7 +14,7 @@
 	<name>java-phone</name>
 	<description>Phone Shop Night Project for Spring Boot  Java 20</description>
 	<properties>
-		<java.version>20</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -57,6 +57,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			
 		</plugins>
 	</build>
 

@@ -1,0 +1,14 @@
+spring:
+  datasource:
+   url: jdbc:postgresql://localhost:5432/phone
+   username: postgres
+   password: 123456
+  jpa:
+   properties:
+    hibernate:
+    dialect: org.hibernate.dialect.PostgreSQLDialect
+   hibernate:
+    ddl-auto: update
+  mvc:
+   pathmatch:
+    matching-strategy: ant_path_matcher
