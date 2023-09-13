@@ -19,12 +19,17 @@ import com.java.makara.gmail.java.phone.service.util.PageUtil;
 import com.java.makara.gmail.java.phone.spec.BrandFilter;
 import com.java.makara.gmail.java.phone.spec.BrandSpec;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 
 @Service
+@RequiredArgsConstructor
 public class BrandServiceImpl implements BrandService {
 	
 	@Autowired
-	private BrandRepository brandRepository;
+	private final BrandRepository brandRepository;
 	
 	@Override
 	public Brand create(Brand brand) {
